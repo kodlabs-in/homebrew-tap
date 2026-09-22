@@ -33,7 +33,7 @@ class Machbatch < Formula
   test do
     ENV["MACHBATCH_DATA_DIR"] = testpath/"data"
 
-    assert_equal "MachBatch 0.1.0 — Slurm 26.05.4 CLI-compatible\n",
+    assert_equal "MachBatch #{version} — Slurm 26.05.4 CLI-compatible\n",
                  shell_output("#{bin}/machbatch --version")
     assert_match "database: ok", shell_output("#{bin}/machbatch doctor")
     assert_match "PARTITION AVAIL", shell_output("#{bin}/sinfo")
