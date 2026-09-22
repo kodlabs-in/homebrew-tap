@@ -45,8 +45,13 @@ jobs:
 
       - run: brew test-bot --only-tap-syntax
 
-      - run: brew test-bot --only-formulae
-        if: github.event_name == 'pull_request' || github.event_name == 'workflow_dispatch'
+      - name: Test changed formulae
+        if: github.event_name == 'pull_request'
+        run: brew test-bot --only-formulae
+
+      - name: Test MachBatch formula
+        if: github.event_name == 'workflow_dispatch'
+        run: brew test-bot --only-formulae machbatch
 
       - name: Upload bottles as artifact
         if: always() && (github.event_name == 'pull_request' || github.event_name == 'workflow_dispatch')
