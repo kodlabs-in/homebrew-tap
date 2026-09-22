@@ -15,8 +15,8 @@ class Machbatch < Formula
 
   desc "Native macOS workload manager with a Slurm-compatible CLI"
   homepage "https://github.com/kodlabs-in/machbatch"
-  url "https://github.com/kodlabs-in/machbatch/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "361121e5b355398e8e066986a984b30d624cdbf01f326a01da567c8bc455248b"
+  url "https://github.com/kodlabs-in/machbatch/archive/refs/tags/v0.1.1.tar.gz"
+  sha256 "652e58beae151881e93077ca49965e0a55a8a89926600cdcf55b439443e80f97"
   license "MIT"
   head "https://github.com/kodlabs-in/machbatch.git", branch: "main"
 
