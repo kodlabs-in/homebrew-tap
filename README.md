@@ -5,14 +5,16 @@ This is the official Homebrew tap for command-line products maintained by
 
 ## Install MachBatch
 
-After the first bottled MachBatch release is published, install it with:
+Install the latest MachBatch release with:
 
 ```bash
 brew install kodlabs-in/tap/machbatch
 ```
 
-Homebrew will select a matching precompiled bottle when one is available. A
-source build requires Xcode with a Swift 6.2-compatible toolchain.
+Homebrew selects the precompiled bottle automatically on a matching platform.
+The current bottle is tested on Apple Silicon with macOS 26 and is usable on
+newer compatible macOS releases. A source build requires Xcode 26 or another
+Swift 6.2-compatible toolchain.
 
 Verify the installation with:
 
@@ -52,4 +54,3 @@ published only after validation on native Intel hardware.
 - Consult the
   [Homebrew documentation](https://docs.brew.sh/How-to-Create-and-Maintain-a-Tap)
   for general Homebrew usage.
-
