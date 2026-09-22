@@ -20,6 +20,11 @@ class Machbatch < Formula
   license "MIT"
   head "https://github.com/kodlabs-in/machbatch.git", branch: "main"
 
+  bottle do
+    root_url "https://github.com/kodlabs-in/homebrew-tap/releases/download/machbatch-0.1.1"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe: "b8d49dca3ebc3458c6bf89643c00efea4dc68bc759619509c60e6bbba3f74ce7"
+  end
+
   depends_on xcode: ["26.0", :build]
   depends_on macos: :ventura
 
